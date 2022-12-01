@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div>
+        <h1 class="text-center text-4xl p-4">Weather Dashboard</h1>
+    </div>
+    <div class="grid grid-cols-6 gap-4 gap-4 border-2">
+        <div class="col-span-2 border-2">
+            <h1 class="text-2xl">Search for a City:</h1>
+            <form action="submit">
+                <input id="searchInput" class='w-full border-2 border-black' placeholder="Type City Name">
+                <button id="searchBtn" class="w-fit border-2 border-black">Search</button>
+            </form>
+            <div class="w-full border-2 border-black">
+                <h1 class="text-center border-b-2 border-blue-500 p-1">List of Previous Cities Searched</h1>
+
+            </div>
+        </div>
+
+        <div class="col-span-4 border-2">
+            <h1 class="border-b-2 border-blue-500 text-center text-2xl">City Selected</h1>
+        </div>
+      </div>
+    
+</body>
+</html>
