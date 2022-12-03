@@ -17,7 +17,7 @@ function fetchLatLon () {
         forcast.innerText = ""
         window.location.reload();
         storeCity(citySearch.value)
-        fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${citySearch.value}&limit=1&appid=7231a1783add28c302dd0ac7d0c01197`
+        fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${citySearch.value}&limit=1&appid=7231a1783add28c302dd0ac7d0c01197`
         )
         // citySearch.reset()
         .then((response) => response.json())
@@ -26,7 +26,7 @@ function fetchLatLon () {
 
 function fetchCityWeather (lat,lon) {
     fetch5Day = () => {
-        fetch(`http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=7231a1783add28c302dd0ac7d0c01197&units=imperial`
+        fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=7231a1783add28c302dd0ac7d0c01197&units=imperial`
         )
         .then((response) => response.json())
         // .then((data => createForcast(data.list[2].dt_txt,data.list[2].main.temp,data.list[2].wind.speed,data.list[2].main.humidity)))
@@ -130,7 +130,7 @@ const historyButtonsEl = document.querySelectorAll('.historyBtn');
 
 function fetchHistoryCity (city) {
     forcast.innerText = ""
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=7231a1783add28c302dd0ac7d0c01197`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=7231a1783add28c302dd0ac7d0c01197`)
     .then((response) => response.json())
     .then((data => fetchCityWeather(data[0].lat,data[0].lon)))
 }
