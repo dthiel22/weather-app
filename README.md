@@ -12,11 +12,11 @@ N/A
 
 When loading in, the 'Search for a City:' column on the left can be seen. A city name can be inputted and the weather for it will populate on search. 
 
-![image explaining the process above](./Assets/IMG1.JPG)
+![image explaining the process above](./assets/IMG1.JPG)
 
 A user can then reload the page and be able to see a list of previous cities searched. These cities can be clicked on to see the weather for each one.
 
-![image explaining the process above](./Assets/IMG2.JPG)
+![image explaining the process above](./assets/IMG2.JPG)
 
 
 ## Next Update
